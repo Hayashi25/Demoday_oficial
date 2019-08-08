@@ -1,0 +1,47 @@
+body{
+    background-color: #CEF2BD;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu {
+    align-items: center;
+    /* background-color: #084630; * COR ORIGINAL/
+    /* background-color: #214001; TESTE 1 */
+    /* background-color: #1E9146; TESTE 2 */
+    background-color:#29402F;
+    background-color: #29402F transparent;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Exo 2', sans-serif;
+    position: fixed;
+    transition: .7s;
+    width: 100%;
+    height: 12%;
+    font-family:'Open Sans',sans-serif; 
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.titleContato{
+    display: flex;
+    align-content: center;
+    margin-block-end: 50px;
+}
+
+hr{
+    border-color: darkgreen;
+    width: 100vw;
+}
+
+.contatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
