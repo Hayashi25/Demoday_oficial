@@ -9,41 +9,55 @@ class Escola(models.Model):
         max_length=255,
         verbose_name='Nome da Escola',
         unique=True,
-        error_messages={'unique': 'Escola com este nome já está cadastrada em nosso sistema.'}
+        error_messages={'unique': 'Escola com este nome já está cadastrado em nosso sistema.'}
     )
+    
     endereco_escola = models.CharField(
         max_length=255, 
         verbose_name='Endereço da Escola'
     )
+    
     telefone_escola = models.CharField(
         max_length=12, 
         verbose_name='Número de Telefone', 
         unique=True,
         error_messages={'unique': 'Este número de telefone já existe em nosso sistema. Verifique e tente novamente.'}
     )
+    
     email = models.EmailField(
         max_length=255, 
         verbose_name='Email', 
         unique=True,
-        error_messages={'unique': 'Este e-mail já está cadastrada em nosso sistema.'}
+        error_messages={'unique': 'Este e-mail já está cadastrado em nosso sistema.'}
     )
+    
     rede_ensino = models.CharField(
         max_length=255, 
         verbose_name='Rede de Ensino'
     )
+    
     tipo_ensino = models.CharField(
         max_length=255, 
         verbose_name='Tipo de Ensino'
     )
+    
     codigo_acesso = models.CharField(
         max_length=12, 
         verbose_name='Registre um código de acesso', 
         unique=True,
         error_messages={'unique': 'Código de acesso já existente.'}
     )
+    
     senha_acesso = models.CharField(
         max_length=12, 
-        verbose_name='Registre uma senha de acesso'
+        verbose_name='Registre uma senha de acesso',
+        default='senha'
+    )
+
+    confirmar_senha = models.CharField(
+    max_length=12,
+    verbose_name='Confirme a senha de acesso',
+    default='senha'
     )
 
     data_requisicao = models.DateTimeField(auto_now_add=True)
