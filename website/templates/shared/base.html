@@ -1,17 +1,69 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Projeto Formiguinha</title>
+    <link rel="stylesheet" href="{% static 'css/contato.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
+
 <body>
+    <nav id="menu">
+        <a href=""><img src="img/icone.png" alt=""></a>
+        <a href="">LOJA</a>
+        <a href="">EXPLORE</a>
+        <a href="">CADASTRE-SE</a>
+        <a href="">LOGIN</a>
+    </nav>
 
     {% block conteudo %}
 
     {% endblock %}
 
+    <footer>
+        <!-- DIV COM TODAS AS INFORMAÇÕES DO FOOTER -->
+        <div class=container>
+            <!-- DIV COM TODAS AS INFORMAÇÕES DO LADO DIREITO DO FOOTER -->
+            <div class=ladodireito>
+                <div class=logoinf> </div>
+                <!-- DIV COM LISTA DE NAVEGAÇÃO DO LADO DIREITO DO FOOTER -->
+                <div class=navbar_ref>
+                    <nav class=main_navigation>
+                        <img class=logo-responsive src="img/passos.png" alt="">
+                        <div id=menu_footer>
+                            <ul class=contato-nav>
+                                <li>
+                                    <a href='navfooter' class="nav_intro"> NOSSA MISSÃO </a>
+                                </li>
+                                <li>
+                                    <a href='navfooter' class="nav_help"> COMO AJUDAMOS </a>
+                                </li>
+                                <li>
+                                    <a href='navfooter' class="nav_contact"> JUNTE-SE </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=ladodireito>
+                            <div class=container_redes>
+                                <img class=midias src="img/insta_icone.png" alt="">
+                                <img class=midias src="img/face_icone.png" alt="">
+                                <img class=gmail src="img/mail_icone.png" alt="">
+                            </div>
+                            <div class=parceiros>
+                                <img class=estacao src="img/logo_face.png" alt="">
+                                <img class=mastertech src="img/logo-mastertech.png" alt="">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
