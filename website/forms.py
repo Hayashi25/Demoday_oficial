@@ -7,7 +7,7 @@ class CadastroEscola(forms.ModelForm):
         model = Escola
         fields = ('nome_escola', 'endereco_escola', 'telefone_escola', 'email',
                   'rede_ensino', 'tipo_ensino', 'codigo_acesso', 'senha_acesso')
-        widgets =
+        widgets={
             'nome_escola': forms.TextInput(attrs={
                 'required': True,
                 'id': 'nome_escola'}),
