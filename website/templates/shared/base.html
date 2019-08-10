@@ -6,18 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Spinnaker&display=swap" rel="stylesheet">
     <title>Projeto Formiguinha</title>
     <link rel="stylesheet" href="{% static 'css/contato.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script defer src="{% static 'js/index.js' %}"></script>
 </head>
 
 <body>
     <nav id="menu">
-        <a href=""><img src="img/icone.png" alt=""></a>
-        <a href="">LOJA</a>
-        <a href="">EXPLORE</a>
-        <a href="">CADASTRE-SE</a>
-        <a href="">LOGIN</a>
+        <a href=""><img src="/static/img/icone.png" alt=""></a>
+        <a href="">Loja</a>
+        <a href="">Explore</a>
+        <a href="">Cadastre-se</a>
+        <a href="">Login</a>
     </nav>
 
     {% block conteudo %}
@@ -27,43 +30,51 @@
     <footer>
         <!-- DIV COM TODAS AS INFORMAÇÕES DO FOOTER -->
         <div class=container>
+
             <!-- DIV COM TODAS AS INFORMAÇÕES DO LADO DIREITO DO FOOTER -->
-            <div class=ladodireito>
-                <div class=logoinf> </div>
-                <!-- DIV COM LISTA DE NAVEGAÇÃO DO LADO DIREITO DO FOOTER -->
-                <div class=navbar_ref>
-                    <nav class=main_navigation>
-                        <img class=logo-responsive src="img/passos.png" alt="">
-                        <div id=menu_footer>
-                            <ul class=contato-nav>
-                                <li>
-                                    <a href='navfooter' class="nav_intro"> NOSSA MISSÃO </a>
-                                </li>
-                                <li>
-                                    <a href='navfooter' class="nav_help"> COMO AJUDAMOS </a>
-                                </li>
-                                <li>
-                                    <a href='navfooter' class="nav_contact"> JUNTE-SE </a>
-                                </li>
-                            </ul>
+
+            <div class=logoinf></div>
+
+            <!-- DIV COM LISTA DE NAVEGAÇÃO DO LADO DIREITO DO FOOTER -->
+
+            <div class=navbar_ref>
+                <nav class=main_navigation>
+                    <img class=logo-responsive src="/static/img/passos.png" alt="">
+                    <div id=menu_footer>
+                        <ul class=contato-nav>
+                            <li>
+                                <a href='navfooter' class="nav_miss">Nossa <span class="missao">Missão</span> </a>
+                            </li>
+                            <li>
+                                <a href='navfooter' class="nav_contact"> Junte-se </Junte-se> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- FAZER MENU DIREITO FOOTER -->
+                    <div class=ladodireito>
+                        <div class=container_redes>
+                            <img class=midias src="/static/img/face_icone.png" alt="">
+                            <img class=midias src="/static/img/insta_icone.png" alt="">
+                            <img class=gmail src="/static/img/mail_icone.png" alt="">
                         </div>
-                        <div class=ladodireito>
-                            <div class=container_redes>
-                                <img class=midias src="img/insta_icone.png" alt="">
-                                <img class=midias src="img/face_icone.png" alt="">
-                                <img class=gmail src="img/mail_icone.png" alt="">
-                            </div>
-                            <div class=parceiros>
-                                <img class=estacao src="img/logo_face.png" alt="">
-                                <img class=mastertech src="img/logo-mastertech.png" alt="">
-                            </div>
+                    </div>
+
+                    <!-- FAZER MENU ESQUERDO FOOTER -->
+                    <div class=ladoesquerdo>
+                        <ul><a href='navfooter' class="nav_intro"> Nossos <span class=parteners>Parceiros</span></a>
+                        </ul>
+                        <div class=parceiros>
+                            <img class=estacao src="img/facebook.png" alt="">
+                            <img class=mastertech src="img/logo-mastertech.png" alt="">
+                            <img class=artemisia src="img/artemisia.png" alt="">
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
+        <!-- FAZER LINHA DETALHE FOOTER -->
+        <hr class=line_base>
     </footer>
-
 </body>
 
 </html>
