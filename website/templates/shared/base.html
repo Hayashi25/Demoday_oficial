@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Spinnaker&display=swap" rel="stylesheet">
     <title>Projeto Formiguinha</title>
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
     <link rel="stylesheet" href="{% static 'css/contato.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -27,30 +28,22 @@
 
     {% endblock %}
 
-    <footer>
-        <!-- DIV COM TODAS AS INFORMAÇÕES DO FOOTER -->
+    <footer id="sobre">
         <div class=container>
-
-            <!-- DIV COM TODAS AS INFORMAÇÕES DO LADO DIREITO DO FOOTER -->
-
             <div class=logoinf></div>
-
-            <!-- DIV COM LISTA DE NAVEGAÇÃO DO LADO DIREITO DO FOOTER -->
-
             <div class=navbar_ref>
                 <nav class=main_navigation>
-                    <img class=logo_responsive src="/static/img/passos.png" alt="">
+                    <img class=logo-responsive src="/static/img/passos.png" alt="">
                     <div id=menu_footer>
-                        <ul class=contato_nav>
+                        <ul class=contato-nav>
                             <li>
-                                <a href='navfooter' class="nav_miss">Nossa <span class="missao">Missão</span> </a>
+                                <p class="nav_miss"> Nossa <span class=missao>Missão</span></p>
                             </li>
                             <li>
-                                <a href='navfooter' class="nav_contact"> Junte-se </a>
+                                <a href="/contato" class="nav_contact"> Fale Conosco </a>
                             </li>
                         </ul>
                     </div>
-                    <!-- FAZER MENU DIREITO FOOTER -->
                     <div class=ladodireito>
                         <div class=container_redes>
                             <img class=midias src="/static/img/face_icone.png" alt="">
@@ -58,21 +51,19 @@
                             <img class=gmail src="/static/img/mail_icone.png" alt="">
                         </div>
                     </div>
-
-                    <!-- FAZER MENU ESQUERDO FOOTER -->
                     <div class=ladoesquerdo>
-                        <ul><a href='navfooter' class="nav_intro"> Nossos <span class=parteners>Parceiros</span></a>
+                        <ul class="parceria">
+                            <p class="nav_intro"> Nossos <span class=parteners>Parceiros</span></p>
                         </ul>
                         <div class=parceiros>
-                            <img class=estacao src="img/facebook.png" alt="">
-                            <img class=mastertech src="img/logo-mastertech.png" alt="">
-                            <img class=artemisia src="img/artemisia.png" alt="">
+                            <img class=estacao src="/static/img/facebook.png" alt="">
+                            <img class=mastertech src="/static/img/logo-mastertech.png" alt="">
+                            <img class=artemisia src="/static/img/artemisia.png" alt="">
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-        <!-- FAZER LINHA DETALHE FOOTER -->
         <hr class=line_base>
     </footer>
 </body>

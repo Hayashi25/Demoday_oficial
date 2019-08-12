@@ -1,0 +1,61 @@
+.nav_help{
+    word-spacing: 5x;
+}
+
+/* OFICIAL */
+
+.corpo{
+    display: grid;
+    grid-template-areas: 'carrossel carrossel carrossel carrossel'
+        'dados dados dados dados'
+        'steps steps steps steps'
+        'footer footer footer footer';
+    grid-template-rows: 95vh 60vh 60vh 30vh;
+    grid-template-columns: 25vw 25vw 25vw 23.7vw;
+    margin: 0;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+/* ESTRUTURAR O CARROSSEL  */
+
+.carrossel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: carrossel;
+}
+
+#slide_caixa{
+    height: 100%;
+    width: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+    background-size: cover;
+
+}
+
+/* SESSÃO DE PESQUISA DOS DADOS */
+
+.dados{
+    background-color: rgb(31, 42, 140);
+    grid-area: dados;
+}
+
+.steps{
+    /* background-color: #F2DA5E; */
+    grid-area: steps;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps div{
+    padding: 20px;
+}
+
+.steps div img{
+    height: 80px;
+    width: 80px;
+}
